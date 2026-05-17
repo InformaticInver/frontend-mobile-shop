@@ -6,8 +6,10 @@ SPA de catálogo de dispositivos móviles (PLP + PDP) con React, TypeScript y Vi
 
 - Node.js 18+ recomendado (mínimo 16 con Vite 5)
 - npm 8+
-## Requisitos
-He añadido 
+
+## Requisitos Extras
+He añadido funcionalidad al carrito, para poder comprar o borrar los productos.
+
 ## Scripts
 
 | Script | Descripcion |
