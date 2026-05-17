@@ -1,0 +1,79 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: #1a3a5c;
+  color: #fff;
+}
+
+.left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo:hover {
+  opacity: 0.9;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.breadcrumbs a {
+  color: #b8d4f0;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  color: #fff;
+}
+
+.separator {
+  color: #7aa3cc;
+}
+
+.active {
+  color: #fff;
+  font-weight: 600;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  border-radius: 999px;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.cart:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.cartIcon {
+  font-size: 1.1rem;
+}
+
+.cartCount {
+  min-width: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+}

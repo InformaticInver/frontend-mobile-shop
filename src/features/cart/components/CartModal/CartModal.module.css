@@ -1,0 +1,174 @@
+.dialog {
+  border: none;
+  padding: 0;
+  margin: auto;
+  width: 100%;
+  max-width: none;
+  max-height: none;
+  overflow: visible;
+  background: transparent;
+}
+
+.dialog::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.panel {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  pointer-events: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 32rem);
+  max-height: min(90vh, 36rem);
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  pointer-events: auto;
+}
+
+.header {
+  padding: 1rem 1.25rem;
+  background: #1a3a5c;
+  color: #fff;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.list {
+  flex: 1;
+  margin: 0;
+  padding: 0.75rem 0;
+  list-style: none;
+  overflow-y: auto;
+}
+
+.item {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  border-bottom: 1px solid #e8edf2;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.image {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain;
+  flex-shrink: 0;
+  background: #f4f7fa;
+  border-radius: 0.35rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.name {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a3a5c;
+}
+
+.variant {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #5a6f82;
+}
+
+.price {
+  margin: 0.15rem 0 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2d6a4f;
+}
+
+.empty {
+  margin: 0;
+  padding: 2rem 1.25rem;
+  text-align: center;
+  color: #5a6f82;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem 1.25rem;
+  border-top: 1px solid #e8edf2;
+}
+
+.button {
+  flex: 1;
+  min-width: 5.5rem;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.delete {
+  background: #fde8e8;
+  color: #b42318;
+}
+
+.delete:hover:not(:disabled) {
+  background: #f9d0d0;
+}
+
+.buy {
+  background: #1a3a5c;
+  color: #fff;
+}
+
+.buy:hover:not(:disabled) {
+  background: #254d75;
+}
+
+.cancel {
+  background: #eef2f6;
+  color: #1a3a5c;
+}
+
+.cancel:hover {
+  background: #dde4ec;
+}

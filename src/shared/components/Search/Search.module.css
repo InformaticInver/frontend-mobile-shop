@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 220px;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #5a6b7d;
+}
+
+.input {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #c5d0db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.input:focus {
+  outline: 2px solid #1a3a5c;
+  outline-offset: 1px;
+  border-color: #1a3a5c;
+}
